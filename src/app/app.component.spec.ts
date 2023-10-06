@@ -17,13 +17,13 @@ describe('AppComponent', () => {
   it(`should have as title 'eer-frontend-proovitoo'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('eer-frontend-proovitoo');
+    expect(app.title).toEqual('err-frontend-proovitoo');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('eer-frontend-proovitoo app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('err-frontend-proovitoo app is running!');
   });
 });

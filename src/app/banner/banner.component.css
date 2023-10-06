@@ -1,0 +1,24 @@
+.banner-img {
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    width: 100%
+}
+
+#banner-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    max-width: 50%;
+    margin-left: 20px;
+    /* Make sure the container takes the full height of the parent */
+}
+
+#banner-content-container>button {
+    width: 90px;
+}
+
+#banner-content-container>button:hover {
+    background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+}

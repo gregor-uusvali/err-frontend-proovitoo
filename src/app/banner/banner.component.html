@@ -1,0 +1,22 @@
+<!-- <div class="absolute banner-img" [style.background-image]="'url(' + bannerImageURL + ')'">
+    <div id="banner-content-container">
+        <button class="mb-2 bg-blue-950 text-white font-semibold py-2 px-4 rounded"><i class="fa fa-play"></i>
+            Vaata</button>
+        <h2 class="text-4xl font-bold mb-2">{{ bannerHeading }}</h2>
+        <p class="text-lg font-bold mb-5">{{ bannerDescription }}</p>
+    </div>
+</div> -->
+<div class='w-full h-[600px] text-white'>
+    <div class='w-full h-full'>
+        <div class='absolute w-full h-[600px] bg-gradient-to-r from-black'></div>
+        <img class='w-full h-full object-cover' [src]="bannerImageURL" alt={movie?.title}>
+        <div class='absolute w-full top-[33%] p-4 md:p-8'>
+            <button class="mb-2 bg-blue-950 hover:bg-blue-800 text-white font-semibold py-2 px-4 rounded"><i class="fa fa-play"></i>
+                Vaata</button>
+            <h1 class='text-3xl md:text-5xl font-bold'>{{ bannerHeading }}</h1>
+            <p class='w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] text-gray-200 text-lg'>
+                {{ bannerDescription }}
+            </p>
+        </div>
+    </div>
+</div>

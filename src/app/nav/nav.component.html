@@ -1,0 +1,46 @@
+<!-- <div class="transparent-background flex items-center justify-between p-4 z-[100] w-full absolute text-gray-300">
+    <div class="no-bg flex gap-4">
+        <img class="no-bg hover:cursor-pointer" src="/assets/jupiter_logo-full_ua.svg">
+        <h2 class="nav-links active no-bg text-base">VIDEO</h2>
+        <h2 class="nav-links no-bg text-base">AUDIO</h2>
+    </div>
+    <div class="no-bg flex gap-4">
+        <h2 class="nav-links no-bg text-base"><i class="fa fa-film"></i> MINU JUPITER</h2>
+        <h2 class="nav-links no-bg text-base"><i class="fa fa-search"></i> OTSING</h2>
+        <h2 class="nav-links no-bg text-base"><i class="fa fa-question-circle"></i> ABI</h2>
+
+    </div>
+</div> -->
+<nav
+    class="flex flex-wrap p-4 bg-transparent transparent-background items-center justify-between z-[100] w-full absolute text-gray-300">
+    <div class="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
+        <div class="no-bg flex gap-4">
+            <img class="no-bg hover:cursor-pointer" src="/assets/jupiter_logo-full_ua.svg">
+            <h2 class="nav-links active no-bg text-base m-1">VIDEO</h2>
+            <h2 class="nav-links no-bg text-base m-1">AUDIO</h2>
+        </div>
+        <button
+            class="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button" (click)="toggleNavbar()">
+            <ng-container *ngIf="showMenu; else hamburgerIcon">
+                <i class="fa fa-times"></i>
+            </ng-container>
+            <ng-template #hamburgerIcon>
+                <i class="fa fa-bars"></i>
+            </ng-template>
+        </button>
+    </div>
+    <div [ngClass]="{'hidden': !showMenu, 'flex': showMenu}" class="lg:flex lg:flex-grow items-center ml-4 mt-2">
+        <ul class="flex flex-col lg:flex-row list-none ml-auto gap-4">
+            <li class="nav-item">
+                <h2 class="nav-links no-bg text-base"><i class="fa fa-film"></i> MINU JUPITER</h2>
+            </li>
+            <li class="nav-item">
+                <h2 class="nav-links no-bg text-base"><i class="fa fa-search"></i> OTSING</h2>
+            </li>
+            <li class="nav-item">
+                <h2 class="nav-links no-bg text-base"><i class="fa fa-question-circle"></i> ABI</h2>
+            </li>
+        </ul>
+    </div>
+</nav>

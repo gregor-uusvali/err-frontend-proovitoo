@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+body {
+    background-color: #20334e;
+    font-family: Rubik,"sans-serif";
+    color: #fff;
+}
+
+.transparent-background {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.no-bg {
+    background-color: none;
+}
