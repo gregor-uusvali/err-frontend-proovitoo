@@ -12,9 +12,13 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Docker
 
+First build the project as specified in the last Built step.
+
 To build the docker image run: `docker build -t err-frontend-proovitoo .`
 
 To run the docker container run: `docker run -d -p 8080:80 err-frontend-proovitoo`
+
+Navigate to `http://localhost:8080/` 
 
 ## Author
 

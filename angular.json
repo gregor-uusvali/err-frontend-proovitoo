@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "eer-frontend-proovitoo": {
+    "err-frontend-proovitoo": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/eer-frontend-proovitoo",
+            "outputPath": "dist/err-frontend-proovitoo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "eer-frontend-proovitoo:build:production"
+              "browserTarget": "err-frontend-proovitoo:build:production"
             },
             "development": {
-              "browserTarget": "eer-frontend-proovitoo:build:development"
+              "browserTarget": "err-frontend-proovitoo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "eer-frontend-proovitoo:build"
+            "browserTarget": "err-frontend-proovitoo:build"
           }
         },
         "test": {
